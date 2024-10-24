@@ -1,21 +1,9 @@
- // drama romanse comedia aventura açao 
-//minios 18 comedia aventura 
-//malevola 10 romance aventura açao 
-//crepuscolo 13 drama romanse comedia aventura 
-//os incriveis 6 drama comedia aventura 
-// a era do gelo; livre, açao comedia aventura                         //  agora e recomendadir de livros esses nomes n valen mais 
-//divertidamente, livre, aventura e comedia
-//fantastica frabica de chocolate, livre, aventura e comedia
-//as aventiras de pi 10 aventura drama 
-//avatar, 14 aventura
-//mulher maravivia,12 açao drama aventura 
-
 let campoIdade;
 let campoFantasia;
 let campoAventura;
 
 function setup() {
-  createCanvas(700, 400);
+  createCanvas(700,400);
   createElement("h2", "Recomendador de filmes");
   createSpan("Sua idade:");
   campoIdade = createInput("10");
@@ -39,33 +27,27 @@ function draw() {
 function geraRecomendacao(idade, gostaDeFantasia, gostaDeAventura) {
   if (idade >= 10) {
     if (idade >= 14) {
-      return "harri potter";
+      return "malevola";
     } else {
-      if (idade >= 12){
+      if (idade >= 12) {
         if(gostaDeFantasia || gostaDeAventura) {
-          return "as cronicas de narnia";          
+          return "mulher maravinha";          
         } else{
-         return "como eu era antes de voce";
+         return "as aventuras de pi";
         }
       } else {
         if (gostaDeFantasia) {
-          return "como eu era antes de voce";
+          return "As aventuras de pi";
         } else {
-          return "jogos vorazes";
+          return "avatar";
         }
       }
     }
   } else {
     if (gostaDeFantasia) {
-      return "vermenho branco e sange azul";
+      return "a fantastica fabrica de chocolat";
     } else {
-      return "heartstopper";
+      return "O feitiço do tempo";
     }
   }
 }
-
-
-
-
- 
-    
